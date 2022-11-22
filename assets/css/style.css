@@ -124,26 +124,25 @@ strong {
 main {
   width: 78%;
   margin-top: 74px;
-  background-color: aqua;
   position: relative;
   margin-left: 22%;
   padding: 30px;
+  background-color: rgb(241, 241, 241);
 }
-
 
 /* TABS */
 
 .nav-item {
   min-width: 50%;
-
 }
 
-.nav-link.active , .nav-link:hover {
+.nav-link.active,
+.nav-link:hover {
   border-bottom: 1.5px solid #fe696a;
-  color:#fe696a
+  color: #fe696a;
 }
 
-.nav-link  {
+.nav-link {
   font-weight: bold;
   border: none;
   width: 100%;
@@ -153,5 +152,119 @@ main {
 }
 
 .tab-content {
+  max-height: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.contact-section {
   height: 250px;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-box i {
+  font-size: 30px;
+  color: #fe696a;
+  margin-right: 20px;
+}
+
+.contact-box p a {
+  text-decoration: none;
+  color: #444;
+}
+
+.social-box {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(149, 149, 149);
+  font-size: 16px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.current {
+  width: 100%;
+
+  padding: 20px;
+  border-bottom: 1px solid rgb(197, 196, 196);
+  cursor: pointer;
+}
+
+.current span {
+  margin-left: 10px;
+}
+
+/* carousel */
+
+.carousel a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.carousel a i {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carousel:hover .icons-car {
+  opacity: 1;
+}
+
+.carousel-item {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  background-color: #59c879;
+  border-radius: 10px;
+}
+
+.app-logo {
+  width: 100px;
+}
+
+
+.how-work {
+  color: #ddd;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.title-section {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
 }
